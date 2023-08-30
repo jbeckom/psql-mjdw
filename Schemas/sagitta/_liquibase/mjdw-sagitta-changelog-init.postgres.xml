@@ -1,0 +1,447 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="jbeckom" id="init-Functions-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_clients_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_coverages_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_policies_acct_prefill_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_policies_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_acord_legal_entity_codes_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_clients_addlinfo_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_clients_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_address_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_address_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_category_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_category_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_email_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_email_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_phone_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_phone_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_website_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_website_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_coverages_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_credit_terms_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_ati_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_ati_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_mbpati_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_mbpati_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_mpci_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_mpci_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_acct_prefill_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_policies_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_sic_codes_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_staff_addlinfo_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-31">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_staff_commission_group_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-33">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_staff_commission_group_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-34">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_staff_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-35">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_types_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-36">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_acord_legal_entity_codes_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-37">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_acord_legal_entity_codes_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-38">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_acord_legal_entity_codes_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-39">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_addlinfo_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-40">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_addlinfo_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-41">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_addlinfo_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-42">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-43">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-44">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_clients_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-45">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_address_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-46">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_address_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-47">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_address_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-48">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_category_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-49">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_category_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-50">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_category_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-51">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-52">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-53">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-54">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_email_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-55">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_email_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-56">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_email_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-57">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_phone_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-58">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_phone_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-59">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_phone_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-60">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_website_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-61">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_website_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-62">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_contacts_website_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-63">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_coverages_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-64">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_coverages_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-65">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_coverages_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-66">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_credit_terms_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-67">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_credit_terms_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-68">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_credit_terms_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-69">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_ati_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-70">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_ati_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-71">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_ati_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-72">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mbpati_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-73">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mbpati_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-74">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mbpati_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-75">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mpci_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-76">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mpci_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-77">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_mpci_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-78">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-79">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-80">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_acct_prefill_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-81">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-82">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-83">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_policies_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-84">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_sic_codes_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-85">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_sic_codes_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-86">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_sic_codes_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-87">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_addlinfo_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-88">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_addlinfo_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-89">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_addlinfo_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-90">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_commission_group_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-91">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_commission_group_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-92">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_commission_group_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-93">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-94">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-95">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_staff_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-96">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_types_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-97">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_types_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-98">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_types_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-99">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_contacts_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>    
+    <changeSet author="jbeckom" id="init-Functions-100">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_staff_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\acord_legal_entity_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_acord_legal_entity_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_client_addlinfo.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_clients.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts_address_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts_category_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts_email_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts_phone_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts_website_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_contacts.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_coverages.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_credit_terms.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_policies_acct_prefill_ati.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_policies_acct_prefill_mbpati.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_policies_acct_prefill_mpci.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_policies_acct_prefill.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_policies.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_sic_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_staff_addlinfo.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_staff_commission_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_staff.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_types.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\clients_addlinfo.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\clients.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts_address_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts_category_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts_email_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts_phone_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts_website_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\contacts.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-32">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\coverages.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-33">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\credit_terms.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-34">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\policies_acct_prefill_ati.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-35">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\policies_acct_prefill_mbpati.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-36">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\policies_acct_prefill_mpci.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-37">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\policies_acct_prefill.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-38">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\policies.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-39">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\sic_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-40">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\staff_addlinfo.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-41">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\staff_commission_group.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-42">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\staff.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Tables-43">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\types.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-101">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_clients_deltas.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-102">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_contacts_deltas.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-103">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_int_date.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-104">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_contacts_address_group_lis.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-105">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_contacts_email_group_lis.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-106">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_contacts_fax_group_lis.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="init-Functions-107">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_contacts_phone_group_lis.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+</databaseChangeLog>

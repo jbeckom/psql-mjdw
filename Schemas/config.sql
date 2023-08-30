@@ -1,0 +1,2 @@
+CREATE SCHEMA IF NOT EXISTS config;
+ALTER SCHEMA config OWNER TO mj_admin;

@@ -1,0 +1,117 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="jbeckom" id="mjdw-35-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_insurors_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_alternate_contact_info_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_alternate_contact_info_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_alternate_contact_info_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_alternate_contact_info_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors_alternate_contact_info.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors_alternate_contact_info.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_div_dept_designations_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_div_dept_designations_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_div_dept_designations_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_div_dept_designations_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors_div_dept_designations.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors_div_dept_designations.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_admitted_states_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_admitted_states_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_prevent_update.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_admitted_states_insert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_admitted_states_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors_admitted_states.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors_admitted_states.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_non_admitted_states_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_non_admitted_states_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_non_admitted_states_insert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_non_admitted_states_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-31">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors_non_admitted_states.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-32">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors_non_admitted_states.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-33">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_state_specific_company_codes_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-34">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_insurors_state_specific_company_codes_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-35">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_state_specific_company_codes_insert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-36">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_insurors_state_specific_company_codes_delete.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-37">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\insurors_state_specific_company_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-35-38">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_insurors_state_specific_company_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+</databaseChangeLog>

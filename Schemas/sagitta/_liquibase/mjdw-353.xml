@@ -1,0 +1,63 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="jbeckom" id="mjdw-356-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_company_master_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_company_master_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_company_master.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\company_master.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_department_d.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_department_i.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tr_audit_company_master_department_u.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_company_master_department_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_company_master_department.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-356-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\company_master_department.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-370-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\trial_balance.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-370-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_trial_balance_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-370-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_ledger_type_codes_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-370-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\fn_trial_balance_current_period.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-371-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\ledger_type_codes.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-371-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_ledger_type_codes_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-371-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_ledger_type_codes_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+</databaseChangeLog>

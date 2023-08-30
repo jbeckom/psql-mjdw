@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="jbeckom" id="mjdw-139-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\..\..\Roles\rl_sagitta_c.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-data_integration-user.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\replace-sp_clients_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\replace-sp_sic_codes_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\replace-sp_clients_addlinfo_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\tfn_staff_last_entry.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-staff-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-staff_addlinfo-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts_address_group-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts_category_group-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts_email_group-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts_phone_group-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-contacts_website_group-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Change Scripts\mjdw-139\update-types-structure.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\clients.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\audit_clients.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+    <changeSet author="jbeckom" id="mjdw-139-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Functions\sp_contacts_upsert.sql" relativeToChangelogFile="true" splitStatements="true" stripComments="true"/>
+    </changeSet>
+</databaseChangeLog>

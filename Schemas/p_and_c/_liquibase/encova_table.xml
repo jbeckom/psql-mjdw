@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+        <changeSet author="wedrington" id="encova_table-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_encova.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="encova_table-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_encova.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="encova_table-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_raw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="encova_table-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="encova_table-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="encova_table-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\flagged_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    </databaseChangeLog>

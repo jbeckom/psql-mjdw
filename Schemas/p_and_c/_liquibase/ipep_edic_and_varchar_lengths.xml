@@ -1,0 +1,66 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_edic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_ipep.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_stco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_edic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_ipep.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_stco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_raw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\flagged_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_avis_subsidiaries.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_injury_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="ipep_edic_and_varchar_lengths-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_roseacr_machines.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+</databaseChangeLog>

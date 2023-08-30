@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS prod_proj;
+
+ALTER SCHEMA prod_proj OWNER TO mj_admin;

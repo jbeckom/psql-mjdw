@@ -1,0 +1,2 @@
+CREATE SCHEMA IF NOT EXISTS miedge;
+ALTER SCHEMA miedge OWNER TO mj_admin;

@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS benefitpoint.custom_section_account_customization_categories;

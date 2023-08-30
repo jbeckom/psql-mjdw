@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="wedrington" id="bm_views_carrier_views-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sel.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+        <changeSet author="wedrington" id="bm_views_carrier_views-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hrt.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="bm_views_carrier_views-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="bm_views_carrier_views-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_aig_intelli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="bm_views_carrier_views-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\benchmarking_occ_dist_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+     <changeSet author="wedrington" id="bm_views_carrier_views-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\benchmarking_pg_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+         <changeSet author="wedrington" id="bm_views_carrier_views-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\benchmarking_table_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+             <changeSet author="wedrington" id="bm_views_carrier_views-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\etl_control.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+</databaseChangeLog>

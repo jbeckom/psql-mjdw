@@ -1,0 +1,96 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="wedrington" id="brilliant_guid-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+        <changeSet author="wedrington" id="brilliant_guid-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_causes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_1_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+     <changeSet author="wedrington" id="brilliant_guid-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_continuity_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+         <changeSet author="wedrington" id="brilliant_guid-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_cyber_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+             <changeSet author="wedrington" id="brilliant_guid-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_safety_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_fleet_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_rcic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_1_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_continuity_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_cyber_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_fleet_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                 <changeSet author="wedrington" id="brilliant_guid-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_safety_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_report_text_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_1.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_continuity.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_cyber.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_fleet.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="brilliant_guid-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_safety.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+        <changeSet author="wedrington" id="brilliant_guid-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_aperture.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+        <changeSet author="wedrington" id="brilliant_guid-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+        <changeSet author="wedrington" id="brilliant_guid-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\flagged_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="brilliant_guid-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                <changeSet author="wedrington" id="brilliant_guid-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="brilliant_guid-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\risk_matrix.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="brilliant_guid-31">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\risk_management_score.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+</databaseChangeLog>

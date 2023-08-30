@@ -1,0 +1,108 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+        <changeSet author="wedrington" id="data_loader_cleanup-0">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_claims_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="data_loader_cleanup-1">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sompo_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="data_loader_cleanup-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\causes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="data_loader_cleanup31">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                               <changeSet author="wedrington" id="data_loader_cleanup-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                           <changeSet author="wedrington" id="data_loader_cleanup-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_causes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                           <changeSet author="wedrington" id="data_loader_cleanup-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                           <changeSet author="wedrington" id="data_loader_cleanup-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                <changeSet author="wedrington" id="data_loader_cleanup32">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="data_loader_cleanup33">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_aperture.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="data_loader_cleanup-2">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sompo_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                <changeSet author="wedrington" id="data_loader_cleanup-3">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_claims_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+            <changeSet author="wedrington" id="data_loader_cleanup-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_raw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                <changeSet author="wedrington" id="data_loader_cleanup-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="data_loader_cleanup-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                <changeSet author="wedrington" id="data_loader_cleanup-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\flagged_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                    <changeSet author="wedrington" id="data_loader_cleanup-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_avis_subsidiaries.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                        <changeSet author="wedrington" id="data_loader_cleanup-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                        <changeSet author="wedrington" id="data_loader_cleanup-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                            <changeSet author="wedrington" id="data_loader_cleanup-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                <changeSet author="wedrington" id="data_loader_cleanup-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                    <changeSet author="wedrington" id="data_loader_cleanup-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_injury_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                       <changeSet author="wedrington" id="data_loader_cleanup-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                           <changeSet author="wedrington" id="data_loader_cleanup-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                               <changeSet author="wedrington" id="data_loader_cleanup-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_roseacr_machines.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                   <changeSet author="wedrington" id="data_loader_cleanup-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000005.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                       <changeSet author="wedrington" id="data_loader_cleanup-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cinco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                           <changeSet author="wedrington" id="data_loader_cleanup-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_advisen_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="data_loader_cleanup-34">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_advisen_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                               <changeSet author="wedrington" id="data_loader_cleanup-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_tra_sftp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                                   <changeSet author="wedrington" id="data_loader_cleanup-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hrt.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                                       <changeSet author="wedrington" id="data_loader_cleanup-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_nagri.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                                           <changeSet author="wedrington" id="data_loader_cleanup-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_nmic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                                               <changeSet author="wedrington" id="data_loader_cleanup-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sel.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+                                                                                   <changeSet author="wedrington" id="data_loader_cleanup-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_starr.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+</databaseChangeLog>

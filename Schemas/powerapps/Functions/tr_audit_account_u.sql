@@ -1,0 +1,147 @@
+CREATE OR REPLACE FUNCTION powerapps.tr_audit_account_u ()
+RETURNS TRIGGER 
+LANGUAGE plpgsql 
+AS $$
+
+BEGIN 
+	INSERT INTO powerapps.audit_account (
+		 account_source
+		,source_key
+		,old_account_name
+		,new_account_name
+		,old_client_code
+		,new_client_code
+		,old_client_category
+		,new_client_category
+		,old_pc_client_category
+		,new_pc_client_category
+		,old_medical_funding_type
+		,new_medical_funding_type
+		,old_enrolled_employees
+		,new_enrolled_employees
+		,old_bor_dt
+		,new_bor_dt
+		,old_erisa_info
+		,new_erisa_info
+		,old_stop_loss_renew_dt
+		,new_stop_loss_renew_dt
+		,old_industry
+		,new_industry
+		,old_dba
+		,new_dba
+		,old_eb_primary_sic
+		,new_eb_primary_sic
+		,old_pc_primary_sic
+		,new_pc_primary_sic
+		,old_pc_second_sic
+		,new_pc_second_sic
+		,old_pc_tertiary_sic
+		,new_pc_tertiary_sic
+		,old_other_subsidiaries
+		,new_other_subsidiaries
+		,old_pc_client_profile
+		,new_pc_client_profile
+		,old_eb_client_profile
+		,new_eb_client_profile
+		,old_eb_account_classification
+		,new_eb_account_classification
+		,old_client_rev_25k
+		,new_client_rev_25k
+		,old_revenue_range
+		,new_revenue_range
+		,old_ein
+		,new_ein
+		,old_naics_description
+		,new_naics_description
+		,old_web_url
+		,new_web_url
+		,old_parent_account
+		,new_parent_account
+		,old_primary_contact
+		,new_primary_contact
+		,old_account_owner
+		,new_account_owner
+		,old_status_code
+		,new_status_code
+		,old_status_reason
+		,new_status_reason
+		,old_total_rewards_producer
+		,new_total_rewards_producer
+		,guid
+		,audit_action
+	)
+	SELECT 	 OLD.account_source
+			,OLD.source_key
+			,OLD.account_name
+			,NEW.account_name
+			,OLD.client_code
+			,NEW.client_code
+			,OLD.client_category
+			,NEW.client_category
+			,OLD.pc_client_category
+			,NEW.pc_client_category
+			,OLD.medical_funding_type
+			,NEW.medical_funding_type
+			,OLD.enrolled_employees
+			,NEW.enrolled_employees
+			,OLD.bor_dt
+			,NEW.bor_dt
+			,OLD.erisa_info
+			,NEW.erisa_info
+			,OLD.stop_loss_renew_dt
+			,NEW.stop_loss_renew_dt
+			,OLD.industry
+			,NEW.industry
+			,OLD.dba
+			,NEW.dba
+			,OLD.eb_primary_sic
+			,NEW.eb_primary_sic
+			,OLD.pc_primary_sic
+			,NEW.pc_primary_sic
+			,OLD.pc_second_sic
+			,NEW.pc_second_sic
+			,OLD.pc_tertiary_sic
+			,NEW.pc_tertiary_sic
+			,OLD.other_subsidiaries
+			,NEW.other_subsidiaries
+			,OLD.pc_client_profile
+			,NEW.pc_client_profile
+			,OLD.eb_client_profile
+			,NEW.eb_client_profile
+			,OLD.eb_account_classification
+			,NEW.eb_account_classification
+			,OLD.client_rev_25k
+			,NEW.client_rev_25k
+			,OLD.revenue_range
+			,NEW.revenue_range
+			,OLD.ein
+			,NEW.ein
+			,OLD.naics_description
+			,NEW.naics_description
+			,OLD.web_url
+			,NEW.web_url
+			,OLD.parent_account
+			,NEW.parent_account
+			,OLD.primary_contact
+			,NEW.primary_contact
+			,OLD.account_owner
+			,NEW.account_owner
+			,OLD.status_code
+			,NEW.status_code
+			,OLD.status_reason
+			,NEW.status_reason
+			,OLD.total_rewards_producer
+			,NEW.total_rewards_producer
+			,OLD.guid
+			,'U';
+	RETURN OLD;
+END;
+$$;
+GO
+
+/*** PERMISSIONS ***/
+ALTER FUNCTION powerapps.tr_audit_account_u() OWNER TO mj_admin;
+GO
+
+GRANT EXECUTE ON FUNCTION powerapps.tr_audit_account_u TO rl_powerapps_X;
+GO

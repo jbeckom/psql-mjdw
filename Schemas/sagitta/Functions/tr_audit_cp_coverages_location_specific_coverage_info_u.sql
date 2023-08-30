@@ -1,0 +1,145 @@
+CREATE OR REPLACE FUNCTION sagitta.tr_audit_cp_coverages_location_specific_coverage_info_u() 
+RETURNS TRIGGER 
+LANGUAGE plpgsql 
+AS $$ 
+
+BEGIN 
+	INSERT INTO sagitta.audit_cp_coverages_location_specific_coverage_info (
+		 sagitem 
+		,lis 
+		,old_building_number 
+		,new_building_number 
+		,old_subject_insurance_cd 
+		,new_subject_insurance_cd 
+		,old_subject_insurance_desc 
+		,new_subject_insurance_desc 
+		,old_insurance_amt 
+		,new_insurance_amt 
+		,old_blanket_number 
+		,new_blanket_number 
+		,old_loss_cause_cd 
+		,new_loss_cause_cd 
+		,old_coinsurance_pct 
+		,new_coinsurance_pct 
+		,old_inflation_guard_pct 
+		,new_inflation_guard_pct 
+		,old_valuation_type_cd 
+		,new_valuation_type_cd 
+		,old_agreed_value_id 
+		,new_agreed_value_id 
+		,old_deductible_symbol 
+		,new_deductible_symbol 
+		,old_deductible 
+		,new_deductible 
+		,old_deductible_type_cd 
+		,new_deductible_type_cd 
+		,old_deductible_type_desc 
+		,new_deductible_type_desc 
+		,old_deductible_basic_cd 
+		,new_deductible_basic_cd 
+		,old_premium_amt 
+		,new_premium_amt 
+		,old_building_desc 
+		,new_building_desc 
+		,old_start_dt 
+		,new_start_dt 
+		,old_end_dt 
+		,new_end_dt 
+		,old_second_value_format_cd 
+		,new_second_value_format_cd 
+		,old_second_value_amt 
+		,new_second_value_amt 
+		,old_off_premises_power_dep_property_commercial_name 
+		,new_off_premises_power_dep_property_commercial_name 
+		,old_off_premises_power_dep_property_addr 
+		,new_off_premises_power_dep_property_addr 
+		,old_off_premises_power_dep_property_addr_2 
+		,new_off_premises_power_dep_property_addr_2 
+		,old_off_premises_power_dep_property_city 
+		,new_off_premises_power_dep_property_city 
+		,old_off_premises_power_dep_property_postal_code 
+		,new_off_premises_power_dep_property_postal_code 
+		,old_off_premises_power_dep_property_postal_extension_code 
+		,new_off_premises_power_dep_property_postal_extension_code 
+		,old_off_premises_power_dep_property_county 
+		,new_off_premises_power_dep_property_county 
+		,old_off_premises_power_dep_property_state_prov_cd 
+		,new_off_premises_power_dep_property_state_prov_cd 
+		,old_off_premises_power_dep_property_country 
+		,new_off_premises_power_dep_property_country 
+		,audit_action 
+	)
+	SELECT 	 OLD.sagitem 
+			,OLD.lis 
+			,OLD.building_number 
+			,NEW.building_number 
+			,OLD.subject_insurance_cd 
+			,NEW.subject_insurance_cd 
+			,OLD.subject_insurance_desc 
+			,NEW.subject_insurance_desc 
+			,OLD.insurance_amt 
+			,NEW.insurance_amt 
+			,OLD.blanket_number 
+			,NEW.blanket_number 
+			,OLD.loss_cause_cd 
+			,NEW.loss_cause_cd 
+			,OLD.coinsurance_pct 
+			,NEW.coinsurance_pct 
+			,OLD.inflation_guard_pct 
+			,NEW.inflation_guard_pct 
+			,OLD.valuation_type_cd 
+			,NEW.valuation_type_cd 
+			,OLD.agreed_value_id 
+			,NEW.agreed_value_id 
+			,OLD.deductible_symbol 
+			,NEW.deductible_symbol 
+			,OLD.deductible 
+			,NEW.deductible 
+			,OLD.deductible_type_cd 
+			,NEW.deductible_type_cd 
+			,OLD.deductible_type_desc 
+			,NEW.deductible_type_desc 
+			,OLD.deductible_basic_cd 
+			,NEW.deductible_basic_cd 
+			,OLD.premium_amt 
+			,NEW.premium_amt 
+			,OLD.building_desc 
+			,NEW.building_desc 
+			,OLD.start_dt 
+			,NEW.start_dt 
+			,OLD.end_dt 
+			,NEW.end_dt 
+			,OLD.second_value_format_cd 
+			,NEW.second_value_format_cd 
+			,OLD.second_value_amt 
+			,NEW.second_value_amt 
+			,OLD.off_premises_power_dep_property_commercial_name 
+			,NEW.off_premises_power_dep_property_commercial_name 
+			,OLD.off_premises_power_dep_property_addr 
+			,NEW.off_premises_power_dep_property_addr 
+			,OLD.off_premises_power_dep_property_addr_2 
+			,NEW.off_premises_power_dep_property_addr_2 
+			,OLD.off_premises_power_dep_property_city 
+			,NEW.off_premises_power_dep_property_city 
+			,OLD.off_premises_power_dep_property_postal_code 
+			,NEW.off_premises_power_dep_property_postal_code 
+			,OLD.off_premises_power_dep_property_postal_extension_code 
+			,NEW.off_premises_power_dep_property_postal_extension_code 
+			,OLD.off_premises_power_dep_property_county 
+			,NEW.off_premises_power_dep_property_county 
+			,OLD.off_premises_power_dep_property_state_prov_cd 
+			,NEW.off_premises_power_dep_property_state_prov_cd 
+			,OLD.off_premises_power_dep_property_country 
+			,NEW.off_premises_power_dep_property_country 
+			,'U'; 
+	RETURN OLD;
+END;
+$$;
+GO 
+
+/*** PERMISSIONS ***/
+ALTER FUNCTION sagitta.tr_audit_cp_coverages_location_specific_coverage_info_u() OWNER TO mj_admin;
+GO 
+
+GRANT EXECUTE ON FUNCTION sagitta.tr_audit_cp_coverages_location_specific_coverage_info_u() TO rl_sagitta_x;
+GO 

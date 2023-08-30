@@ -1,0 +1,141 @@
+create function sagitta.tr_audit_um_coverages_d() 
+returns trigger 
+language plpgsql 
+as $$ 
+
+begin 
+    insert into sagitta.audit_um_coverages (
+         sagitem 
+        ,old_audit_staff_cd 
+        ,old_audit_entry_dt 
+        ,old_audit_time 
+        ,old_audit_cd 
+        ,old_audit_history_record_number 
+        ,old_audit_program 
+        ,old_audit_effective_dt 
+        ,old_audit_change_agency_id 
+        ,old_policy_agency_id 
+        ,old_follow_umb_form 
+        ,old_follow_form_excess 
+        ,old_umbrella_excess 
+        ,old_liab_each_occur_limit 
+        ,old_liab_annual_aggregate 
+        ,old_retained_limit 
+        ,old_first_dollar_defense 
+        ,old_current_retro_date 
+        ,old_off_dt 
+        ,old_desc_of_underlying_cov 
+        ,old_garagekeepers_coverage 
+        ,old_garagekeepers_exposure 
+        ,old_aircraft_pass_coverage 
+        ,old_aircraft_pass_exposure 
+        ,old_care_custody_coverage 
+        ,old_care_custody_exposure 
+        ,old_professional_coverage 
+        ,old_professional_exposure 
+        ,old_foreign_liab_coverage 
+        ,old_foreign_liab_exposure 
+        ,old_malpractice_coverage 
+        ,old_malpractive_exposure 
+        ,old_aircraft_liab_coverage 
+        ,old_aircraft_liab_exposure 
+        ,old_add_int_coverage 
+        ,old_add_int_exposure 
+        ,old_emp_benefit_coverage 
+        ,old_emp_benefit_exposure 
+        ,old_liquor_coverage 
+        ,old_liquor_exposure 
+        ,old_pollution_coverage 
+        ,old_pollution_exposure 
+        ,old_vendors_liab_coverage 
+        ,old_vendors_liab_exposure 
+        ,old_watercraft_coverage 
+        ,old_watercraft_exposure 
+        ,old_first_other_description 
+        ,old_first_other_coverage 
+        ,old_first_other_exposure 
+        ,old_second_other_description 
+        ,old_second_other_coverage 
+        ,old_second_other_exposure 
+        ,old_third_other_description 
+        ,old_third_other_coverage 
+        ,old_third_other_exposure 
+        ,old_fourth_other_description 
+        ,old_fourth_other_coverage 
+        ,old_fourth_other_exposure 
+        ,old_retro_coverage_yes_no_cd 
+        ,old_retro_proposed_date 
+        ,audit_action 
+    )
+    select   OLD.sagitem 
+            ,OLD.audit_staff_cd 
+            ,OLD.audit_entry_dt 
+            ,OLD.audit_time 
+            ,OLD.audit_cd 
+            ,OLD.audit_history_record_number 
+            ,OLD.audit_program 
+            ,OLD.audit_effective_dt 
+            ,OLD.audit_change_agency_id 
+            ,OLD.policy_agency_id 
+            ,OLD.follow_umb_form 
+            ,OLD.follow_form_excess 
+            ,OLD.umbrella_excess 
+            ,OLD.liab_each_occur_limit 
+            ,OLD.liab_annual_aggregate 
+            ,OLD.retained_limit 
+            ,OLD.first_dollar_defense 
+            ,OLD.current_retro_date 
+            ,OLD.off_dt 
+            ,OLD.desc_of_underlying_cov 
+            ,OLD.garagekeepers_coverage 
+            ,OLD.garagekeepers_exposure 
+            ,OLD.aircraft_pass_coverage 
+            ,OLD.aircraft_pass_exposure 
+            ,OLD.care_custody_coverage 
+            ,OLD.care_custody_exposure 
+            ,OLD.professional_coverage 
+            ,OLD.professional_exposure 
+            ,OLD.foreign_liab_coverage 
+            ,OLD.foreign_liab_exposure 
+            ,OLD.malpractice_coverage 
+            ,OLD.malpractive_exposure 
+            ,OLD.aircraft_liab_coverage 
+            ,OLD.aircraft_liab_exposure 
+            ,OLD.add_int_coverage 
+            ,OLD.add_int_exposure 
+            ,OLD.emp_benefit_coverage 
+            ,OLD.emp_benefit_exposure 
+            ,OLD.liquor_coverage 
+            ,OLD.liquor_exposure 
+            ,OLD.pollution_coverage 
+            ,OLD.pollution_exposure 
+            ,OLD.vendors_liab_coverage 
+            ,OLD.vendors_liab_exposure 
+            ,OLD.watercraft_coverage 
+            ,OLD.watercraft_exposure 
+            ,OLD.first_other_description 
+            ,OLD.first_other_coverage 
+            ,OLD.first_other_exposure 
+            ,OLD.second_other_description 
+            ,OLD.second_other_coverage 
+            ,OLD.second_other_exposure 
+            ,OLD.third_other_description 
+            ,OLD.third_other_coverage 
+            ,OLD.third_other_exposure 
+            ,OLD.fourth_other_description 
+            ,OLD.fourth_other_coverage 
+            ,OLD.fourth_other_exposure 
+            ,OLD.retro_coverage_yes_no_cd 
+            ,OLD.retro_proposed_date 
+            ,'D';
+    return old;
+end;
+$$;
+go
+
+/*** PERMISSIONS ***/
+alter function sagitta.tr_audit_um_coverages_d() owner to mj_admin;
+go 
+
+grant execute on function sagitta.tr_audit_um_coverages_d() to rl_sagitta_x;
+go 

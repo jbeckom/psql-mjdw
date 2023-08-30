@@ -1,0 +1,139 @@
+CREATE OR REPLACE FUNCTION sagitta.tr_audit_cp_blankets_u() 
+RETURNS TRIGGER 
+LANGUAGE plpgsql 
+AS $$
+
+BEGIN 
+	INSERT INTO sagitta.audit_cp_blankets (
+		sagitem 
+	   ,old_audit_staff_cd 
+	   ,new_audit_staff_cd 
+	   ,old_audit_entry_dt 
+	   ,new_audit_entry_dt 
+	   ,old_audit_time 
+	   ,new_audit_time 
+	   ,old_audit_cd 
+	   ,new_audit_cd 
+	   ,old_audit_history_record_number 
+	   ,new_audit_history_record_number 
+	   ,old_audit_program 
+	   ,new_audit_program 
+	   ,old_audit_effective_dt 
+	   ,new_audit_effective_dt 
+	   ,old_audit_change_agency_id 
+	   ,new_audit_change_agency_id 
+	   ,old_blanket_number 
+	   ,new_blanket_number 
+	   ,old_policy_agency_id 
+	   ,new_policy_agency_id 
+	   ,old_cause 
+	   ,new_cause 
+	   ,old_coinsurance_pct 
+	   ,new_coinsurance_pct 
+	   ,old_inflation_guard_pct 
+	   ,new_inflation_guard_pct 
+	   ,old_rate 
+	   ,new_rate 
+	   ,old_total_blk_limit 
+	   ,new_total_blk_limit 
+	   ,old_total_blk_premium 
+	   ,new_total_blk_premium 
+	   ,old_blanket_type_cd 
+	   ,new_blanket_type_cd 
+	   ,old_blanket_type_desc 
+	   ,new_blanket_type_desc 
+	   ,old_valuation_cd 
+	   ,new_valuation_cd 
+	   ,old_agree_amt_ind 
+	   ,new_agree_amt_ind 
+	   ,old_ded_symbol 
+	   ,new_ded_symbol 
+	   ,old_ded_amt 
+	   ,new_ded_amt 
+	   ,old_deductible_type_cd 
+	   ,new_deductible_type_cd 
+	   ,old_deductible_basis_cd 
+	   ,new_deductible_basis_cd 
+	   ,old_off_dt 
+	   ,new_off_dt 
+	   ,old_start_dt 
+	   ,new_start_dt 
+	   ,old_second_amt_value_type 
+	   ,new_second_amt_value_type 
+	   ,old_second_amt_value 
+	   ,new_second_amt_value 
+	   ,old_end_dt 
+	   ,new_end_dt 
+	   ,audit_action 
+	)
+	SELECT 	 OLD.sagitem 
+			,OLD.audit_staff_cd 
+			,NEW.audit_staff_cd 
+			,OLD.audit_entry_dt 
+			,NEW.audit_entry_dt 
+			,OLD.audit_time 
+			,NEW.audit_time 
+			,OLD.audit_cd 
+			,NEW.audit_cd 
+			,OLD.audit_history_record_number 
+			,NEW.audit_history_record_number 
+			,OLD.audit_program 
+			,NEW.audit_program 
+			,OLD.audit_effective_dt 
+			,NEW.audit_effective_dt 
+			,OLD.audit_change_agency_id 
+			,NEW.audit_change_agency_id 
+			,OLD.blanket_number 
+			,NEW.blanket_number 
+			,OLD.policy_agency_id 
+			,NEW.policy_agency_id 
+			,OLD.cause 
+			,NEW.cause 
+			,OLD.coinsurance_pct 
+			,NEW.coinsurance_pct 
+			,OLD.inflation_guard_pct 
+			,NEW.inflation_guard_pct 
+			,OLD.rate 
+			,NEW.rate 
+			,OLD.total_blk_limit 
+			,NEW.total_blk_limit 
+			,OLD.total_blk_premium 
+			,NEW.total_blk_premium 
+			,OLD.blanket_type_cd 
+			,NEW.blanket_type_cd 
+			,OLD.blanket_type_desc 
+			,NEW.blanket_type_desc 
+			,OLD.valuation_cd 
+			,NEW.valuation_cd 
+			,OLD.agree_amt_ind 
+			,NEW.agree_amt_ind 
+			,OLD.ded_symbol 
+			,NEW.ded_symbol 
+			,OLD.ded_amt 
+			,NEW.ded_amt 
+			,OLD.deductible_type_cd 
+			,NEW.deductible_type_cd 
+			,OLD.deductible_basis_cd 
+			,NEW.deductible_basis_cd 
+			,OLD.off_dt 
+			,NEW.off_dt 
+			,OLD.start_dt 
+			,NEW.start_dt 
+			,OLD.second_amt_value_type 
+			,NEW.second_amt_value_type 
+			,OLD.second_amt_value 
+			,NEW.second_amt_value 
+			,OLD.end_dt 
+			,NEW.end_dt 
+			,'U';
+	RETURN OLD;
+END;
+$$;
+GO 
+
+/*** PERMISSIONS ***/
+ALTER FUNCTION sagitta.tr_audit_cp_blankets_u() OWNER TO mj_admin;
+GO 
+
+GRANT EXECUTE ON FUNCTION sagitta.tr_audit_cp_blankets_u() TO rl_sagitta_x;
+GO 

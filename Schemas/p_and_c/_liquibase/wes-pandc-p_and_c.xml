@@ -1,0 +1,1050 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.6.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet author="wedrington" id="wes-pandc-4">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\active_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-5">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\advisen_bm_log.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-6">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\advisen_extra_lobs.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-7">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\advisen_industries.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-8">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\all_claims_monthly.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-9">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\all_policies_override.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-10">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\amb_ratings.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-11">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\amb_states.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-12">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\aperture_usage_log.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-13">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\api_control.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-14">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\assessment_text.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-15">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_business_uses.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-16">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_classes_primary.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-17">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_industry_classes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-18">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_ldf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-19">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_radius_classes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-20">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\auto_weight_classes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-21">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\autos.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-22">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\benchmarking_assurex.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-23">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\benchmarking_assurex_sample_size.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-24">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\benchmarking_distribution.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-25">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\benchmarking_report.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-26">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\body_part_categories.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-27">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-28">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\carrier_alias_map.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-29">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\carriers_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-30">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\cause_categories.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-31">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\causes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-32">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\ciab_market_index.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-33">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\class_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-34">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\client_journey_override.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-35">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\client_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-36">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\construction_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-37">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\coverage_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-38">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-39">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\elilill_mv_collision_tracker.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-40">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\elilill_nets.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-41">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\elr.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-42">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\etl_control.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-43">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\etl_logging.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-44">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\etl_logging_refresh.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-45">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\etl_processed_clients.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-46">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\exchange_rates.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-47">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\gl_basis_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-48">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\gl_exposure_classes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-49">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\gl_exposures.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-50">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\incidence_rates.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-51">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\industry_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-52">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\injury_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-53">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\kpi_targets.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-54">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\lim_ded_mod_override.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-55">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\location_code_addresses.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-56">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\loss_run_control.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-57">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\loss_run_tracker.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-58">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\loss_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-59">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_advisen_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-60">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_advisen_rpt_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-61">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-62">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_by_claim_number.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-63">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_causes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-64">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_claim_locations.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-65">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_claim_status.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-66">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-67">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_injury_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-68">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_litigation.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-69">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_months.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-70">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-71">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_occupations.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-72">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-73">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_subsidiary_locations.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-74">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mapping_supervisors.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-75">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\mod_projection.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-76">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-77">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\nature_categories.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-78">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\occupancy_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-79">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\occurrence_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-80">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\payroll.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-81">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\prospects_and_demo.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-82">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000001.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-83">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000001_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-84">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000002.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-85">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000005.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-86">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000006.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-87">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000006_quincy.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-88">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_1000006_redgold.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-89">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_acuity_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-90">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_acuity_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-91">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_acuity_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-92">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_ahict.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-93">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_aig.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-94">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_aig_intelli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-95">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-96">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_allianz_2021.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-97">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_amic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-98">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_amtrust.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-99">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_asc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-100">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_auto_owners.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-101">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_awcic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-102">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_bh.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-103">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_cap_spec.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-104">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_chu.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-105">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_chu_detail.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-106">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_chubb_esis.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-107">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_chubb_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-108">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_cinco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-109">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_claims_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-110">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_cmic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-111">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_cna.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-112">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_copic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-113">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_crum.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-114">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_cwg.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-115">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_demo.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-116">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_eai.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-117">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_emc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-118">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_encova.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-119">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_fcci.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-120">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_fcci_detail.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-121">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_fcci_detail_201906.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-122">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_gb.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-123">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_gmcc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-124">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_hanover.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-125">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_hartford.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-126">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_hartford_treo.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-127">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_hrt.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-128">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_icw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-129">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_ipep.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-130">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_jwf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-131">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lak.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-132">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lmi_cau_liab.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-133">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lmi_cau_pd.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-134">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lmi_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-135">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lmi_war.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-136">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_lmi_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-137">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_mial.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-138">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_mitsui_email_non_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-139">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_mitsui_email_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-140">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_nagri.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-141">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_nav.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-142">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_nmic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-143">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_nmic_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-144">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_obam.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-145">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_occ.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-146">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_phi.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-147">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_pma.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-148">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_pro.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-149">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_qbe.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-150">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_rcic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-151">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_rcic_gl.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-152">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_rgi.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-153">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_samic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-154">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_samic_az.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-155">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sel.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-156">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sel_portal.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-157">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sencc_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-158">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sencc_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-159">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sompo_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-160">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sompo_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-161">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_sompo_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-162">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_starr.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-163">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_stco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-164">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_summit.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-165">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_tra_sftp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-166">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_wic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-167">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_wic_detailed.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-168">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_wsib.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-169">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_zic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-170">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\raw_zic_nonri.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-171">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\revenue.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-172">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\safety_culture_survey.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-173">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\safety_culture_survey_recs.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-174">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\severe_claims_trigger.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-175">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\states.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-176">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\subsidiaries.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-177">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_1_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-178">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_continuity_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-179">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_cyber_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-180">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_fleet_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-181">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_report_text.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-182">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tier_2_safety_answers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-183">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_additional_interest.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-184">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_autos.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-185">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_communication_preferences.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-186">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_drivers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-187">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_equipment.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-188">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_fine_art.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-189">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_garage_keepers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-190">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_hazards_and_exposures.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-191">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_international_travel.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-192">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_locations.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-193">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_mileage.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-194">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_named_insured.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-195">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_payroll.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-196">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_pollution.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-197">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_product_liability.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-198">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\tiqs_sov.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-199">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\wc_ldf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-200">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\y_mapping_roseacr_machines.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-201">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\y_restaurant_benchmark_categories.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-202">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\y_restaurant_benchmarks.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-203">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\y_roseacr_locations.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-204">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\y_starcor_locations_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-205">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Tables\zip_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-206">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\elilill_sif.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-207">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000001.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-208">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000002.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-209">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000005.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-210">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000006.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-211">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000006_quincy.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-212">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_1000006_redgold.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-213">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_acuity_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-214">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_acuity_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-215">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_acuity_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-216">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_ahict.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-217">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_aig.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-218">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_aig_intelli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-219">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_allianz.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-220">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_allianz_2021.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-221">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_amic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-222">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_amtrust.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-223">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_asc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-224">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_auto_owners.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-225">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_awcic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-226">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_bh.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-227">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cap_spec.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-228">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_chu.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-229">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_chubb_esis.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-230">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_chubb_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-231">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cinco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-232">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_claims_other.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-233">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cmic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-234">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cna.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-235">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_copic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-236">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_crum.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-237">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_cwg.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-238">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_demo.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-239">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_eai.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-240">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_emc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-241">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_encova.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-242">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_fcci.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-243">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_fcci_detail.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-244">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_gb.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-245">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_gmcc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-246">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hanover.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-247">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hartford.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-248">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hartford_treo.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-249">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_hrt.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-250">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_icw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-251">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_ipep.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-252">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_jwf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-253">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lak.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-254">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lmi_cau_liab.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-255">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lmi_cau_pd.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-256">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lmi_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-257">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lmi_war.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-258">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_lmi_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-259">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_mial.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-260">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_mitsui_email_non_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-261">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_mitsui_email_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-262">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_nagri.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-263">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_nav.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-264">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_nmic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-265">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_obam.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-266">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_occ.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-267">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_phi.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-268">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_pma.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-269">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_qbe.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-270">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_rcic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-271">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_rcic_gl.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-272">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_rgi.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-273">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_samic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-274">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_samic_az.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-275">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sel.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-276">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sel_portal.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-277">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sencc_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-278">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sencc_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-279">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sompo_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-280">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sompo_gli.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-281">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_sompo_wc.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-282">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_starr.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-283">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_stco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-284">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_summit.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-285">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_tra_sftp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-286">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_wic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-287">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_wic_detailed.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-288">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_wsib.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-289">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\normal_zic.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-290">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\agg_ded_lim_mod.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-291">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_auto_ldf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-292">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_auto_ldf_lookup.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-293">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_autos.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-294">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_raw.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-295">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_clean.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-296">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-297">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-298">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_claims_aperture.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-299">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_employee_headcount.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-300">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_gl_exposures.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-301">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\clients.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-302">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_incidence_rates.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-303">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_payroll.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-304">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\occurrence_deductibles_limits.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-305">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_cau_bm.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-306">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_cyb_bm.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-307">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_gli_bm.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-308">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_prop_bm.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-309">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_wc_bm.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-310">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_policies_zero.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-311">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_revenue.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-312">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_wc_ldf.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-313">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\all_wc_ldf_lookup.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-314">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\risk_management_score.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-315">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\risk_matrix.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-316">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\x_client_journey_task_lists.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-317">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\y_normal_akasman_supp.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-318">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\teamwork_tasks.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-319">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_1_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-320">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_continuity_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-321">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_cyber_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-322">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_fleet_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-323">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_report_text_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-324">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\tier_2_safety_results.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-325">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_1.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-326">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_continuity.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-327">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_cyber.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-328">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_fleet.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-329">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\average_tier_2_safety.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-330">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\avis_safety_kpi.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-331">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\carriers.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-332">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\ce_accounts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-333">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\ce_accts_gl.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-334">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\ce_accts_payroll.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-335">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\complex_claims_monthly.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-336">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\elilill_fleet_report.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-337">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\flagged_claims.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-338">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Materialized Views\advisen_bm_requests.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-339">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_advisen_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-340">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_advisen_rpt_industry.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-341">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_avis_subsidiaries.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-342">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_body_parts.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-343">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_cau.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-344">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_causes_wco.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-345">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_coverage_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-346">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_injury_codes.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-347">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_loss_runs.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-348">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_nature.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-349">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_nmic_loss_types.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-350">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_policies.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-351">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\kickouts_roseacr_machines.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+    <changeSet author="wedrington" id="wes-pandc-352">
+        <sqlFile dbms="postgresql" encoding="UTF-8" endDelimiter="\nGO" path="..\Views\payroll_input_values.sql" relativeToChangelogFile="true" stripComments="true" />
+    </changeSet>
+</databaseChangeLog>
